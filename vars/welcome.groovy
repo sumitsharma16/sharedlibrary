@@ -3,7 +3,8 @@
 def call(Map parameter){
   config = pipelineConfig.readPropFiles(
         configFile: "${parameter.configFile}"
+  )
+  
+  echo "${config.parameter}"
 
-    print("{$config.parameter}")
- 
-}
+  }
