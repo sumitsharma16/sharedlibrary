@@ -5,5 +5,5 @@ def call(Map parameter){
         configFile: "${parameter.configFile}"
 
     
-  echo "${config.name}"
+ 
 }
