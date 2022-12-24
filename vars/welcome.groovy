@@ -1,4 +1,9 @@
+#!/usr/bin/env groovy 
+
 def call(Map parameter){
-  configFile: 'config.properties'
-  echo "${parameter.name}"
+  config = pipelineConfig.readPropFiles(
+        configFile: "${parameter.configFile}"
+
+    
+  echo "${config.name}"
 }
