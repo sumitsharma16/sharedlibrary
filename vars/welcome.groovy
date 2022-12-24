@@ -5,7 +5,7 @@ def readPropFiles(Map parameter) {
 }
 
 def call(Map parameter){
-  config = pipelineConfig.readPropFiles(
+  config = welcome.readPropFiles(
         configFile: "${parameter.configFile}"
   )
   
