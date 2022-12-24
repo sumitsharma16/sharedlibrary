@@ -1,3 +1,4 @@
-def call(name){
-echo "${name}"
+def call(Map parameter){
+  configFile: 'config.properties'
+  echo "${parameter.name}"
 }
