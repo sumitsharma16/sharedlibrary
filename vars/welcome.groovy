@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy 
 
 def call(Map parameter){
-  config = readPropFiles(
+  config = readProperties(
         configFile: "${parameter.configFile}"
   )
   
