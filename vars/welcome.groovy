@@ -1,2 +1,3 @@
-def call(name)
+def call(name){
 echo "${name}"
+}
