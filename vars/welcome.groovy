@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy 
 
 def call(Map parameter){
-  config = pipelineConfig.readPropFiles(
+  config = readPropFiles(
         configFile: "${parameter.configFile}"
   )
   
