@@ -13,7 +13,7 @@ def checkoutCode(Map parameter){
                  ]]])
         }
         catch (err) {
-                echo "Job Failed"
+                echo "Job Failed $err"
         }
     }
 }
