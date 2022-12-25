@@ -5,17 +5,15 @@ def checkoutCode(Map parameter){
     stage("${parameter.stageName}"){
         try{
             checkout([$class: 'GitSCM', 
-            branches: [[name: '"${BRANCH}"']],
+            branches: [[name: "${BRANCH}"]],
             extensions: [],
             userRemoteConfigs: [[
                 credentialsId: 'bitbucket',
-                url: '"${GIT_URL}"'
+                url: "${GIT_URL}"
                  ]]])
         }
         catch (err) {
                 echo "Job Failed"
         }
     }
-
-
 }
