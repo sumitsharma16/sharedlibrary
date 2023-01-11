@@ -8,5 +8,5 @@ def call(Map parameter){
     GIT_URL: "${config.GIT_URL}",
     BRANCH: "${config.BRANCH}"
   )
-  test.test
+  test.test()
 }
