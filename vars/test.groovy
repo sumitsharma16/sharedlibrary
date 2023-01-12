@@ -1,3 +1,3 @@
-def test(string abc = "sumit"){
+def test(String abc = "sumit"){
   echo "${abc}"
 }
