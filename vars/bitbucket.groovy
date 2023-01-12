@@ -1,6 +1,6 @@
 def checkoutCode(Map parameter){
     //def GIT_URL = "${parameter.GIT_URL}"
-    
+    cleanWs()
     //def BRANCH = "${parameter.BRANCH}"
     def GIT_URL = "https://bitbucket.org/tangerinelife/tangerine-dev-api-webpage/"
     def BRANCH  =  "jenkins-test"
