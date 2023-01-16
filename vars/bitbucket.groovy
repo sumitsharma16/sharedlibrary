@@ -19,3 +19,8 @@ def checkoutCode(Map parameter){
         }
     }
 }
+
+
+def checkoutScm(){
+        checkout scm
+    }
