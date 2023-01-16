@@ -1,6 +1,10 @@
 def call(Map parameter){
 
-  config = readProperties file: "${parameter.configFile}"
+ // config = readProperties file: "${parameter.configFile}"
+  config = pipelineConfig.readPropFiles(
+        configFile: "${parameter.configFile}"
+    )
+  
   echo "#########################################"
   echo "${config}"
   echo "${config.name}"
