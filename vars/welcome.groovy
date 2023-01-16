@@ -1,9 +1,14 @@
 def call(Map parameter){
 
+ 
+  bitbucket.checkoutScm()
+ 
  // config = readProperties file: "${parameter.configFile}"
   config = pipelineConfig.readPropFiles(
         configFile: "${parameter.configFile}"
     )
+ 
+ 
   
   echo "#########################################"
   echo "${config}"
